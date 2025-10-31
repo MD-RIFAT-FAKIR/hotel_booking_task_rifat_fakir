@@ -10,6 +10,13 @@ use Carbon\Carbon;
 
 class BookingController extends Controller
 {
+    //booking form
+    public function bookingForm() {
+        return view('hotel_booking_form');
+    }
+
+
+
     //check available room
     public function checkAvailability(Request $request) {
         // dd($request->all());
@@ -48,7 +55,7 @@ class BookingController extends Controller
                 //price will increase if the day is friday or saturday
                 $price = $category->base_price;
                 if ($date->isFriday() || $date->isSaturday()) {
-                    $price *= 1.2; // weekend surcharge +20%
+                    $price += (20/100*$price); // weekend surcharge +20%
                 }
 
                 $basePrice += $category->base_price;

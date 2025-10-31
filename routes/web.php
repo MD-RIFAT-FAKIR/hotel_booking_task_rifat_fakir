@@ -17,6 +17,10 @@ use App\Http\Controllers\BookingController;
 */
 
 /*----------------------booking all route----------------------*/
+//hotel booking form
+Route::get('booking/form', [BookingController::class, 'bookingForm'])->name('hotel.booking.form');
+
+
 //check availability of room
 Route::post('/chek-availability', [BookingController::class, 'checkAvailability'])->name('check.availability');
 
@@ -40,11 +44,11 @@ Route::get('/booking-thank-you/{id}', [BookingController::class, 'thankYou'])->n
 
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('login');
 });
 
 Route::get('/dashboard', function () {
-    return view('hotel_booking_form');
+    return view('dashboard');
 })->middleware(['auth', 'verified'])->name('dashboard');
 
 Route::middleware('auth')->group(function () {
