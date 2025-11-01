@@ -130,6 +130,7 @@ Route: POST /booking/confirm
 Route: GET /booking/thank-you/{id}
 - Displays booking confirmation details.
 
+![image](https://github.com/MD-RIFAT-FAKIR/hotel_booking_task_rifat_fakir/blob/cd6d11dd161a2178322a1e92175033fa2f1f32fc/Screenshot%202025-11-01%20162001.png)
 
 
 ## 🧮 Price Calculation Logic
