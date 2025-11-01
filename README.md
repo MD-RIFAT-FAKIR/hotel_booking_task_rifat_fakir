@@ -116,7 +116,7 @@ Route: POST /check-availability
 
 - Returns availability.blade.php with available rooms & pricing.
 
-
+![image](https://github.com/MD-RIFAT-FAKIR/hotel_booking_task_rifat_fakir/blob/af02ce77e8b99aa00ccff7989714d446b0cba7c6/Screenshot%202025-11-01%20161909.png)
 
 ## 3️⃣ Confirm Booking
 Route: POST /booking/confirm
