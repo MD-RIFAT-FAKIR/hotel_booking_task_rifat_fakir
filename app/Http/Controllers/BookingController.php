@@ -55,7 +55,7 @@ class BookingController extends Controller
                 //price will increase if the day is friday or saturday
                 $price = $category->base_price;
                 if ($date->isFriday() || $date->isSaturday()) {
-                    $price += (20/100*$price); // weekend surcharge +20%
+                    $price += (20 / 100 ) * $price; // weekend surcharge +20%
                 }
 
                 $basePrice += $category->base_price;
@@ -66,7 +66,8 @@ class BookingController extends Controller
 
             //if rent for more than or equal 3 day the get 10% discount
             if ($days >= 3) {
-                $finalPrice *= 0.9;
+                $discount = (10 / 100) * $finalPrice; // 10% of total price
+                $finalPrice -= $discount;
             }
 
             $availableCategories[] = [

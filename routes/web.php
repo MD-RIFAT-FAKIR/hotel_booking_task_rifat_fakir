@@ -44,7 +44,7 @@ Route::get('/booking-thank-you/{id}', [BookingController::class, 'thankYou'])->n
 
 
 Route::get('/', function () {
-    return view('login');
+    return view('auth.login');
 });
 
 Route::get('/dashboard', function () {
