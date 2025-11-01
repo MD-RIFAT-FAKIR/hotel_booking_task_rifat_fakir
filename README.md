@@ -99,7 +99,7 @@ Seed the database:
 
 - Displays a form for user inputs: name, email, phone, from_date, and to_date.
 
-
+![image](https://github.com/MD-RIFAT-FAKIR/hotel_booking_task_rifat_fakir/blob/d140239659a965ab058a8953a9d6fad037abe775/Screenshot%202025-11-01%20160622.png)
 
 ## 2️⃣ Check Availability
 Route: POST /check-availability
